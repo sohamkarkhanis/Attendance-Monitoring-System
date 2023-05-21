@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RTR Attendance Module</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Soham Karkhanis" />
+    <meta
+      name="description"
+      content="This is a webpage for the RTR Attendance Module WebServer. On clicking the button, an excel file gets downloaded, containing the attendance data."
+    />
+    <style>
+      body {
+        font-family: "Montserrat", sans-serif;
+        text-align: center;
+        background-color: #0d1117;
+        color: #e5e5e5;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 95vh;
+      }
+
+      h1 {
+        color: #d4d4d4;
+        font-size: 36px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        color: #e5e5e5;
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+
+      p strong {
+        color: #33d7ff;
+      }
+
+      footer {
+        font-size: 14px;
+        color: #999999;
+        margin-top: 50px;
+      }
+
+      .container {
+        max-width: 600px;
+        width: 80%;
+        padding: 20px;
+        background-color: #212121;
+        border-radius: 8px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
+      }
+
+      .btn {
+        display: inline-block;
+        background-color: #33d7ff;
+        color: #333333;
+        padding: 10px 20px;
+        border-radius: 4px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #94eaff;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>You have reached the<br />RTR Attendance Module<br />WebServer</h1>
+
+      <p>
+        Append <strong>/csv</strong> to the URL to get the CSV file containing
+        the attendance record, or simply click the button below!
+      </p>
+
+      <a class="btn" href="http://192.168.4.1/csv" target="_blank"
+        >Download CSV</a
+      >
+    </div>
+
+    <footer>Designed by Soham Karkhanis</footer>
+  </body>
+</html>
